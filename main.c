@@ -71,8 +71,8 @@ void Merge(struct BSTs** Tree, struct Properties* tab[][5]);
 int main()
 {
     struct BSTs* Arbres = malloc(sizeof(struct BSTs));
-    struct Properties* Tab[n][5];
-    init_Tab(Tab, n);
+    struct Properties* Tab[m][5];
+    init_Tab(Tab, m);
 
     for (int i = 0; i < m; i++) {  
 
@@ -80,7 +80,7 @@ int main()
         Merge(&Arbres, Tab);
     }
 
-    free_Tab(Tab, n);
+    free_Tab(Tab, m);
     free(Arbres);
     return 0;
 }
